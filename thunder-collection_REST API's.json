@@ -1,0 +1,175 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "REST API's",
+    "dateExported": "2024-02-18T19:28:18.439Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "4ad7985e-9ae1-4a26-9b2b-5674a3464fa2",
+            "colId": "732467b1-20f2-4f7b-8fdc-0a29480163f6",
+            "containerId": "",
+            "name": "add players by match_id",
+            "url": "http://localhost:8080/api/test/player",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-18T15:59:56.428Z",
+            "modified": "2024-02-18T18:44:57.706Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\n            \"name\" : \"vamshi\",\n            \"rushing_yards\" : 50,\n            \"touchdowns_thrown\" : 1,\n            \"sacks\" : 0,\n            \"field_goals\" : {\n                \"made\" : 2,\n                \"missed\" : 0\n            },\n            \"catches_made\" : 3\n           \n        }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2664e45d-e698-49e0-9f67-4915bcdada5f",
+            "colId": "732467b1-20f2-4f7b-8fdc-0a29480163f6",
+            "containerId": "",
+            "name": "add Soccer_states_document ",
+            "url": "http://localhost:8080/api/add",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-18T16:03:56.704Z",
+            "modified": "2024-02-18T16:05:00.878Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"match_id\" : \"test\",\n    \"league_name\" : \"test\",\n    \"date\" : \"test\",\n    \"opponent\" : \"test\",\n    \"result\" : \"test\",\n    \"players\" : [ \n        {\n            \"name\" : \"New Player\",\n            \"rushing_yards\" : 50,\n            \"touchdowns_thrown\" : 1,\n            \"sacks\" : 0,\n            \"field_goals\" : {\n                \"made\" : 2,\n                \"missed\" : 0\n            },\n            \"catches_made\" : 3\n           \n        }]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a61212be-1b45-4b00-8e50-14b1e450368d",
+            "colId": "732467b1-20f2-4f7b-8fdc-0a29480163f6",
+            "containerId": "",
+            "name": "Update player",
+            "url": "http://localhost:8080/api/test/65d250294a5a37a7f7abe815",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-02-18T16:31:13.606Z",
+            "modified": "2024-02-18T18:45:25.223Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n        \"field_goals\": {\n          \"made\": 2,\n          \"missed\": 0\n        },\n        \"name\": \"jiguru\",\n        \"rushing_yards\": 50,\n        \"touchdowns_thrown\": 1,\n        \"sacks\": 0,\n        \"catches_made\": 3\n      \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "70002c81-0c69-4280-93bf-708d23ef053a",
+            "colId": "732467b1-20f2-4f7b-8fdc-0a29480163f6",
+            "containerId": "",
+            "name": "Delete player",
+            "url": "http://localhost:8080/api/saikiran/65d239a6aea6e6464833f0f9",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-02-18T17:13:47.938Z",
+            "modified": "2024-02-18T17:14:25.331Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "76794529-e7f9-4aa7-a7e6-76020765d5a3",
+            "colId": "732467b1-20f2-4f7b-8fdc-0a29480163f6",
+            "containerId": "",
+            "name": "getWinLossCount",
+            "url": "http://localhost:8080/api/win-loss-count",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-02-18T17:19:36.299Z",
+            "modified": "2024-02-18T17:20:10.233Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4d4727a2-3827-4217-8049-c500b8a4901e",
+            "colId": "732467b1-20f2-4f7b-8fdc-0a29480163f6",
+            "containerId": "",
+            "name": "getTopSackPlayers",
+            "url": "http://localhost:8080/api/top-sack-players",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-02-18T17:38:38.641Z",
+            "modified": "2024-02-18T17:39:01.204Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e764c3a8-444f-46f3-ad85-acd3968599b6",
+            "colId": "732467b1-20f2-4f7b-8fdc-0a29480163f6",
+            "containerId": "",
+            "name": "players-by-field-goals-made",
+            "url": "http://localhost:8080/api/players-by-field-goals-made",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-18T17:46:10.279Z",
+            "modified": "2024-02-18T17:46:50.799Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0074a71f-ca54-4798-8c30-9d631b15e44c",
+            "colId": "732467b1-20f2-4f7b-8fdc-0a29480163f6",
+            "containerId": "",
+            "name": "getTotalRushingYardsForMatch",
+            "url": "http://localhost:8080/api/total-rushing-yards",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-02-18T17:54:19.696Z",
+            "modified": "2024-02-18T18:02:02.062Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"matchId\" : \"USA20240101\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "829a0c6e-c486-42db-8117-fdb5d4b7c354",
+            "colId": "732467b1-20f2-4f7b-8fdc-0a29480163f6",
+            "containerId": "",
+            "name": "average-rushing-yards",
+            "url": "http://localhost:8080/api/average-rushing-yards",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-02-18T18:04:13.741Z",
+            "modified": "2024-02-18T18:04:38.629Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
